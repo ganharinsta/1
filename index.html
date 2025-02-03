@@ -16,7 +16,12 @@ const audio = new Audio('https://respostaspremiada.com/venda/cash.mp3');
 audio.preload = 'auto';
 </script>
 
-<button onclick="playSound()">Clique para ouvir</button>
+function openPopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'flex';
+    playSound();  // Aqui o som será tocado
+}
+
 	
 
   <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool" url="https://napoleon.com.br/"></script>
