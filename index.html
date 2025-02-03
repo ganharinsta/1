@@ -1,27 +1,4 @@
 <!DOCTYPE html><html lang="pt-BR"><head>
-
-<script>
-let soundPlayed = false;
-
-function playSound() {
-    if (!soundPlayed) {
-        const audio = new Audio('https://respostaspremiada.com/venda/cash.mp3');
-        audio.play();
-        soundPlayed = true;
-    }
-}
-
-// Pré-carregar o som para evitar atraso na execução
-const audio = new Audio('https://respostaspremiada.com/venda/cash.mp3');
-audio.preload = 'auto';
-</script>
-
-function openPopup() {
-    const popup = document.getElementById('popup');
-    popup.style.display = 'flex';
-    playSound();  // Aqui o som será tocado
-}
-
 	
 
   <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool" url="https://napoleon.com.br/"></script>
